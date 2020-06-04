@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Caio Henrique</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Caio henrique</h1>
-    <h2>Full Stack Developer</h2>    
+  <section class="banner" id="sec">
+    <header>
+      <a href="#" class="logo">Caayu</a>
+      <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="content">
+      <h2>Hello World, <br>I'm <span>Caio</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laudantium quos facere inventore repellat vero fuga quo dolor laborum, fugiat ex sapiente quasi ad aperiam voluptatum alias veritatis cupiditate assumenda!</p>
+      <a href="#">Hire me</a>
+    </div>
+    <ul class="sci">
+      <li><a href="https://github.com/Caayu" target="_blank"><img src="github.png"></a></li>
+      <li><a href="https://twitter.com/caayu_" target="_blank"><img src="twitter.png"></a></li>
+      <li><a href="https://www.linkedin.com/in/caio-henrique1308/" target="_blank"><img src="linkedin.png"></a></li>
+    </ul>
+  </section>
+  <div id="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <script type="text/javascript">
+    function toggle () {
+      const sec = document.getElementById('sec')
+      const nav = document.getElementById('navigation')
+      sec.classList.toggle('active')
+      nav.classList.toggle('active')
+    }
+  </script>
 </body>
 </html>
