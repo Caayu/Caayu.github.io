@@ -5,9 +5,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "res:build": "rescript",
+    "res:start": "rescript build -w",
+    "res:clean": "rescript clean"
   },
   "dependencies": {
+    "@rescript/react": "^0.10.3",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -17,6 +20,7 @@
     "eslint": "7",
     "eslint-config-next": "12.0.4",
     "postcss": "^8.4.4",
+    "rescript": "^9.1.4",
     "tailwindcss": "^2.2.19"
   }
 }

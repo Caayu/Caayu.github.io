@@ -1,0 +1,30 @@
+{
+  "name": "caayu",
+  "sources": [
+    {
+      "dir": "pages",
+      "subdirs": true
+    },
+    {
+      "dir": "components",
+      "subdirs": true
+    },
+    {
+      "dir": "bindings",
+      "subdirs": true
+    },
+    {
+      "dir": "utils",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "reason": { "react-jsx": 3 },
+  "suffix": ".bs.js",
+  "bs-dependencies": ["@rescript/react"]
+}
